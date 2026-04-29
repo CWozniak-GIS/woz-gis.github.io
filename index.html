@@ -24,23 +24,37 @@
 
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
       transition: transform 0.2s
     }
     
     h1:hover {
     transform: scale(1.03);
     }
-
-    p {
-      color: #94a3b8;
-      margin-bottom: 6rem;
-      transition: transform 0.2s
-    }
     
-    p:hover {
-    transform: scale(1.02);
-    }
+    .roles {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-bottom: 6rem;
+  	}
+
+    .roles span {
+    padding: 0.4rem 0.8rem;
+    background: #1e293b;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+    transition: transform 0.25s cubic-bezier(0.35, 1.5, 0.65, 1),
+                background 0.2s ease,
+                color 0.2s ease;
+  	}
+
+    .roles span:hover {
+    color: #e2e8f0;
+    transform: translateY(-2px) scale(1.03);
+  	}
 
     a {
       display: block;
@@ -50,12 +64,15 @@
       color: #e2e8f0;
       text-decoration: underline;
       border-radius: 8px;
-      transition: transform 0.4s cubic-bezier(0.75, -1.5, 0.25, 3);
+      transition: transform 0.4s cubic-bezier(0.75, -1.5, 0.25, 3),
+        					background 0.4s ease,
+        					color 0.4s ease;
     }
 
     a:hover {
       background: #334155;
-      transform: scale(1.1);
+      transform: scale(1.1) translateY(-4px);
+  	}
       box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     }
   </style>
@@ -63,8 +80,13 @@
 <body>
   <div class="container">
     <h1>Chris Wozniak</h1>
-    <p>GIS Manager | Cartographer | SysAdmin | Dev | Analyst</p>
-
+    <div class="roles">
+  		<span>GIS Manager</span>
+  		<span>Cartographer</span>
+  		<span>SysAdmin</span>
+  		<span>Dev</span>
+  		<span>Analyst</span>
+    </div>
     <a href="https://woz-gis.com/portfolio" target="_blank">
     <!--- <a href="https://arcg.is/0S485v" target="_blank"> --->
       Portfolio <!--- (ArcGIS StoryMaps Collection) --->
