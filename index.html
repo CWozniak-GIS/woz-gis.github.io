@@ -14,12 +14,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
+      padding: 4rem 1rem;
       text-align: center;
     }
 
     .container {
-      max-width: 500px;
+      max-width: 32rem;
+      user-select: none;
     }
 
     .profile-pic {
@@ -51,27 +53,27 @@
     }
     
     .roles {
-    display: flex;
-    justify-content: center;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    margin-bottom: 6rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 6rem;
   	}
 
     .roles span {
-    padding: 0.4rem 0.8rem;
-    background: #1e293b;
-    border-radius: 999px;
-    font-size: 0.9rem;
-    color: #94a3b8;
-    transition: transform 0.25s cubic-bezier(0.35, 1.5, 0.65, 1),
-                background 0.2s ease,
-                color 0.2s ease;
-  	}
+      padding: 0.4rem 0.8rem;
+      background: #1e293b;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      color: #94a3b8;
+      transition: transform 0.25s cubic-bezier(0.35, 1.5, 0.65, 1),
+                  background 0.2s ease,
+                  color 0.2s ease;
+    }
 
     .roles span:hover {
-    color: #e2e8f0;
-    transform: translateY(-2px) scale(1.03);
+      color: #e2e8f0;
+      transform: translateY(-2px) scale(1.03);
   	}
 
     a {
@@ -90,15 +92,18 @@
     a:hover {
       background: #334155;
       transform: scale(1.1) translateY(-4px);
-  	}
-      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
     }
+
   </style>
 </head>
 <body>
   <div class="container">
+
     <img src="https://woz-gis.com/assets/profile.png" alt="Profile picture" class="profile-pic">
+    
     <h1>Chris Wozniak</h1>
+    
     <div class="roles">
   		<span>Program Leadership</span>
       <span>Enterprise GIS</span>
@@ -107,9 +112,9 @@
   		<span>Applciation Development</span>
       <span>Cartography</span>
     </div>
+   
     <a href="https://woz-gis.com/portfolio" target="_blank">
-    <!--- <a href="https://arcg.is/0S485v" target="_blank"> --->
-      Portfolio <!--- (ArcGIS StoryMaps Collection) --->
+      Portfolio
     </a>
 
     <a href="https://www.linkedin.com/in/chriswozniak1/" target="_blank">
@@ -119,6 +124,7 @@
     <a href="https://github.com/CWozniak-GIS" target="_blank">
       GitHub
     </a>
+
   </div>
 </body>
 </html>
