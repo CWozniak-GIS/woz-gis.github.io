@@ -139,6 +139,13 @@
   </style>
 </head>
 <body>
+    <!---
+		
+		OOO YOU SNOOPIN'!!!
+		
+		Might as well open the console while you're here...
+
+	--->
   <div class="container">
 
     <img src="https://woz-gis.com/assets/profile.png" alt="Profile picture" class="profile-pic">
@@ -186,9 +193,18 @@
     
       <script>
         document.getElementById("year").textContent = new Date().getFullYear();
-    	</script>
+	  </script>
 
   </div>
+
+	      <script>
+	        const images = [
+	          "https://woz-gis.com/assets/hi-how-are-ya.jpg",
+	          "https://woz-gis.com/assets/hello-there.jpg"
+	        ];
+	        const random_hello = images[Math.floor(Math.random() * images.length)];
+	        console.log(random_hello);
+	      </script>
 
 </body>
 </html>
