@@ -11,6 +11,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <style>
+    
+    html {
+  scroll-behavior: smooth;
+		}
+    
     body {
       font-family: system-ui, -apple-system, sans-serif;
       margin: 0;
@@ -55,6 +60,7 @@
       transform: translateY(-4px) scale(1.04);
     }
 
+    
     .links {
      max-width: 48rem;
      min-width: 48rem;
@@ -83,8 +89,18 @@
     }
     
     .pulse-arrow {
+      display: inline-block;
+      font-size: 2rem;
       margin: -2rem auto 6rem auto;
+      background: none;
+      padding: 0;
+      border-radius: 0;
       animation: pulse 3s infinite ease-in-out;
+      
+    }
+    
+    .pulse-arrow:hover {
+      background: none;
     }
     
     .link-text {
@@ -137,7 +153,7 @@
 </head>
 <body>
   
-        <!---
+    <!---
 		
 		OOO YOU SNOOPIN'!!!
 		
@@ -151,29 +167,31 @@
     
     <h1>Chris Wozniak</h1>
     
-    <div class="links">
-      <h2 class="pulse-arrow">↓</h2>
+    <a href="#links" class="pulse-arrow">↓</a>
+    
+    <section id="links">
+      <div class="links">
+        <a href="https://woz-gis.com/portfolio" target="_blank">
+           <img src="https://storymaps.arcgis.com/static/images/favicon-glyph.png" alt="Portfolio" width="16" height="16">&ensp;<span class="link-text">Portfolio</span>
+        </a>
 
-      <a href="https://woz-gis.com/portfolio" target="_blank">
-         <img src="https://storymaps.arcgis.com/static/images/favicon-glyph.png" alt="Portfolio" width="16" height="16">&ensp;<span class="link-text">Portfolio</span>
-      </a>
+        <a href="https://www.linkedin.com/in/chriswozniak1/" target="_blank">
+          <i class="fa-brands fa-linkedin" style="color: #0077b5;"></i>&ensp;<span class="link-text">LinkedIn</span>
+        </a>
 
-      <a href="https://www.linkedin.com/in/chriswozniak1/" target="_blank">
-        <i class="fa-brands fa-linkedin" style="color: #0077b5;"></i>&ensp;<span class="link-text">LinkedIn</span>
-      </a>
+        <a href="https://www.credly.com/users/chris-woz/" target="_blank">
+          <i class="fa-solid fa-award" style="color: rgb(99, 230, 190);"></i>&ensp;<span class="link-text">Certifications</span>
+        </a>
 
-      <a href="https://www.credly.com/users/chris-woz/" target="_blank">
-        <i class="fa-solid fa-award" style="color: rgb(99, 230, 190);"></i>&ensp;<span class="link-text">Certifications</span>
-      </a>
+        <a href="https://github.com/CWozniak-GIS" target="_blank">
+          <i class="fa-brands fa-github"></i>&ensp;<span class="link-text">GitHub</span>
+        </a>
 
-      <a href="https://github.com/CWozniak-GIS" target="_blank">
-        <i class="fa-brands fa-github"></i>&ensp;<span class="link-text">GitHub</span>
-      </a>
-
-      <a href="mailto:chris.wozniak@woz-gis.com" target="_blank">
-        <i class="fa-solid fa-envelope-circle-check" style="color: rgb(150, 180, 200);"></i>&ensp;<span class="link-text">Email</span>
-      </a>
-    </div>
+        <a href="mailto:chris.wozniak@woz-gis.com" target="_blank">
+          <i class="fa-solid fa-envelope-circle-check" style="color: rgb(150, 180, 200);"></i>&ensp;<span class="link-text">Email</span>
+        </a>
+      </div>
+    </section>
     
     <div class="roles">
       <span>Development</span>
